@@ -47,11 +47,11 @@ if [ $# -eq 2 ]; then
 		echo "Warning!! You should put only numbers!"
 	else
 		all_decimals $1 $2
-		echo -e "\n\e[0:32mResult with all decimals\e[0m\n"
+		echo -e "\n\e[0;32mResult with all decimals\e[0m\n"
 		echo "$1 / $2 = "$div
 
 		two_decimals $1 $2
-		echo -e "\n\e[0:32mResult with only 2 decimals\e[0m\n"
+		echo -e "\n\e[0;32mResult with only 2 decimals\e[0m\n"
 		echo -e "$1 / $2 = "$div"\n"
 	fi
 else
