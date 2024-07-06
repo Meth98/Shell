@@ -138,9 +138,9 @@ GetLinuxInfo() {
         net_info=`ip addr show |grep -E 'inet |ether' |awk '{
                 if ($1 == "inet") {
                         split($2, ip, "/")
-                        printf "  %-10s Indirizzo IP: %s\n", $NF, ip[1]
+                        printf "  %-10s IP address: %s\n", $NF, ip[1]
                 } else if ($1 == "ether") {
-                        printf "  %-10s Indirizzo MAC: %s\n", $NF, $2
+                        printf "  %-10s MAC address: %s\n", $NF, $2
                 }
         }'`
 
