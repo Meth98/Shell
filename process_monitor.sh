@@ -16,7 +16,7 @@ print_usage() {
         echo -e "\n   -C -> to count the process"
         echo -e "\n   -N -> to print the process name found"
         echo -e "\nOther info:"
-        echo -e "\n    process -> for example 'ssh' or '/usr/sbin/sshd' or 'ssh|sshd'\n"
+        echo -e "\n    process -> for example 'ssh' or '/usr/sbin/sshd'\n"
         exit 1
 }
 
